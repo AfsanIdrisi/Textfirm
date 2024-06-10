@@ -1,0 +1,113 @@
+Folder Structure
+node module
+--> Node module folder is a folder consiste of paackages need to create react apps
+
+gitignore
+--> use to perform git pull ad push request when the project is hosted in github
+
+paackage.json
+--> It contains the name of the paackages that are installed in the node modules
+
+src 
+--> It is a folder in which the developer has to define it components and props
+
+index.js
+--> Work as entry that trasfers data from app.js to index.html file
+
+App.js
+-->It is the file which reflects the changes created by the developer
+
+
+
+
+
+JSX
+--> Jsx is Html content which is return by js function or components created in App.js file
+--> We can only return one element from a function like
+return(<h1>Afsan</h1>
+        <h2>Idrisi</h1>)----False
+
+Instead we can use jsx fragments <>This is jsx fragment</>
+return(<>
+    <h1>Afsan</h1>
+        <h2>Idrisi</h1>
+    </>)----True
+
+Use of js in html tags
+--> Whenever we need to write a js inside a html tag we have enclose the part to be run as js into {};
+example
+let name="Afsan";
+<h1>Hello {name}</h1>
+
+
+
+MJS
+--> Use to import data from one file to another 
+-->Types of import
+1) Default 
+2) NO Default
+
+1. Default
+Suppose having a file named as module.mjs with 4 variables declared
+let a="Afsan"
+let b= "Sahil"
+let c ="Pushpal"
+let d="Nothing"
+export default a;
+export b;
+export c;
+now after creating this if write in my app.js file
+import name from ./module.mjs // This will import the default value and store it in the name variable;
+
+import {b,c} from ./module.js //This will import b,c in the file but name cant be changed 
+
+Components
+--> A line code that developer can import on its main page of the site example Navbar,Footer,Sidebar,etc
+
+React Function Based Components (RFC)
+Syntax
+import React from 'react'
+export default function Navbar(){
+    return (
+        <>
+            The line of Html Codes
+        </>
+    )
+}
+
+Props In React
+Props is a object which is passed by an component function link Navbar that can be accessed inside the code of that components 
+Example
+
+import React from 'react';
+
+export default function Navbar(props) {
+    return (
+        <>
+            <div id="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Shop</a></li>
+            </div>
+
+            <div id="welcomeText">
+                <h1>Welcome To Text Analyzer Mr {props.user}</h1>
+            </div>
+        </>
+    )
+}
+
+in the above example props is an object which is getting accessed inside the code but user is an attribute of props
+which is defined while importing the Nabar Components
+Example
+<Navbar user="Afsan"/>
+
+PropTypes 
+Navbar.defaultProps={
+    user:"User"
+}
+
+Navbar.propTypes={
+    user:PropTypes.string
+}

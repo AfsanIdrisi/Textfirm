@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 1.2rem;
+  justify-content: space-between;
+}
+#navbar div{
+  display: flex;
+}
+#navbar li{
+  list-style: none;
+  margin: 0 20px;
+}
+#navbar li a:hover{
+  color:red;
+}
+#navbar li a {
+  transition: color .3s ease;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+#welcomeText{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#textForm{
+  padding: 10px;
+  outline: none;
+}
+#analyzer{
+  flex-direction:row;
+  margin-top: 10px;
+}
+.btn{
+  margin: 0 20px;
+  padding: 4px 12px;
+  border: 1px solid blue;
+  background-color: aqua;
+}
+.btn{
+  /* background-color: black;
+  color: white; */
+}
+#preview p{
+  font-size: 17px;
+}
+
+
+/* Alert Css  */
+.success{
+  background-color: rgb(206, 250, 117);
+  padding: 1.2rem;
 }
