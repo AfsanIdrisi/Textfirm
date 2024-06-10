@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Textfirm/static/css/main.4c29f10f.css",
+    "main.js": "/Textfirm/static/js/main.f3cc173b.js",
+    "static/js/453.ed3810f9.chunk.js": "/Textfirm/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Textfirm/index.html",
+    "main.4c29f10f.css.map": "/Textfirm/static/css/main.4c29f10f.css.map",
+    "main.f3cc173b.js.map": "/Textfirm/static/js/main.f3cc173b.js.map",
+    "453.ed3810f9.chunk.js.map": "/Textfirm/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c29f10f.css",
+    "static/js/main.f3cc173b.js"
+  ]
+}
